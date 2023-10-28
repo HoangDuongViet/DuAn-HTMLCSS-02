@@ -12,12 +12,12 @@ html {
 }
 
 body {
+    font-family: "Poppins", sans-serif;
     font-size: 1.6rem;
-    font-family: "Sen", sans-serif;
 }
 
 /* Common */
-.content {
+.main-content {
     width: 1170px;
     max-width: calc(100% - 48px);
     margin: 0 auto 0 auto;
@@ -26,20 +26,15 @@ body {
 .btn {
     display: inline-block;
     min-width: 118px;
-    /* height: 50px; */
-    padding: 18px 16px;
-    border-radius: 12px;
-    background: var(--black-color);
+    padding: 0 16px;
+    line-height: 50px;
     color: #fff;
     text-align: center;
-    font-family: Poppins;
     font-size: 1.6rem;
+    font-style: normal;
     font-weight: 600;
-    line-height: 1.75; /* 175% */
-}
-
-.row {
-    display: flex;
+    background-color: var(--black-color);
+    border-radius: 24.5px;
 }
 
 a {
@@ -47,65 +42,72 @@ a {
 }
 
 /* Header */
-.fixed-header {
-    padding-top: 36px;
+.header {
+    padding: 36px 0 8px;
     background-color: #fffcf4;
+    
+}
+
+.header.fixed{
     position: sticky;
-    top: -26px;
+    top: -28px;
     z-index: 1;
 }
 
-.fixed-header .navbar {
+.header .body {
+    display: flex;
     align-items: center;
 }
 
-.fixed-header .logo {
+.header .logo {
+    font-family: "Sen", sans-serif;
     color: #171100;
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 1.41; /* 141.667% */
 }
 
-.fixed-header .nav {
+.header .nav {
     margin-left: auto;
 }
 
-.fixed-header .nav li {
-    position: relative;
-    padding: 0px 21px;
+.header .nav ul {
+    display: flex;
 }
 
-.fixed-header .nav li:hover::after {
+.header .nav a {
+    padding: 8px 21px;
+    color: #5f5b53;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.header .nav li {
+    position: relative;
+}
+
+.header .nav li:hover::after {
     position: absolute;
     left: 22px;
     bottom: 2px;
     content: "";
-    display: inline-block;
+    display: block;
     width: 12px;
     height: 2px;
     border-radius: 1px;
     background: #171100;
 }
 
-.fixed-header .nav li:hover a {
+.header .nav a:hover {
     color: #171100;
     font-size: 1.6rem;
-    font-weight: 600;
-    line-height: 1.75; /* 175% */
+    text-shadow: 1px 0 0 currentColor;
 }
 
-.fixed-header .nav li a {
-    color: #5f5b53;
-    font-family: Poppins;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 1.75; /* 175% */
-}
-
-.fixed-header .btn {
-    margin-left: 59px;
-    border-radius: 24.5px;
-    padding: 11px 41px;
+.sign-up-btn {
+    margin-left: 49px;
+    min-width: 144px;
 }
 
 /* Hero-wrap */
@@ -113,4 +115,3 @@ a {
     padding: 64px 0 65px 0;
     background-color: #fffcf4;
 }
-
