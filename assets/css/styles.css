@@ -34,7 +34,7 @@ body {
     font-style: normal;
     font-weight: 600;
     background-color: var(--black-color);
-    border-radius: 24.5px;
+    border-radius: 999px;
 }
 
 a {
@@ -45,10 +45,9 @@ a {
 .header {
     padding: 36px 0 8px;
     background-color: #fffcf4;
-    
 }
 
-.header.fixed{
+.header.fixed {
     position: sticky;
     top: -28px;
     z-index: 1;
@@ -110,8 +109,160 @@ a {
     min-width: 144px;
 }
 
-/* Hero-wrap */
-.hero-wrap {
-    padding: 64px 0 65px 0;
+/* Hero */
+.hero {
+    padding-top: 56px;
+    padding-bottom: 65px;
     background-color: #fffcf4;
+}
+
+.hero .body {
+    display: flex;
+}
+
+.hero .media-block {
+    position: relative;
+    width: 48%;
+}
+
+.hero .content-block {
+    width: 52%;
+}
+
+.hero .media-block .img {
+    width: 470px;
+    height: 685px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+.hero-summary {
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+    position: absolute;
+    right: 0;
+    bottom: 48px;
+    width: 270px;
+    height: 244px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero-summary .item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.hero-summary .item .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff9e8;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.hero-summary .item:nth-of-type(2) .icon {
+    background: #fcefff;
+}
+
+.hero-summary .item:last-of-type .icon {
+    background: #ebeaff;
+}
+
+.hero-summary .item .label {
+    color: #5f5b53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
+
+.hero-summary .item .title {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.6; /* 166.667% */
+}
+
+/* hero right */
+.hero .content-block {
+    padding: 64px 0 63px 130px;
+}
+
+.hero .heading {
+    color: #171100;
+    font-family: Sen;
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 1.17; /* 117.241% */
+    letter-spacing: -1.16px;
+}
+
+.hero .desc {
+    margin-top: 22px;
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67; /* 166.667% */
+}
+
+.hero .cta-group {
+    margin: 38px 0 48px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-cta {
+    min-width: 180px;
+    line-height: 64px;
+    background: var(--yellow-color);
+}
+
+.hero .watch-video {
+    margin-left: 28px;
+    display: flex;
+    align-items: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.hero .watch-video .icon {
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .watch-video span {
+    margin-left: 14px;
+    color: #171100;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.hero .stats strong {
+    padding: 0 8px 0 28px;
+    color: #171100;
+    font-family: Sen;
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 1.22; /* 122.727% */
+}
+
+.hero .stats {
+    margin: 8px 0 0 -28px;
 }
