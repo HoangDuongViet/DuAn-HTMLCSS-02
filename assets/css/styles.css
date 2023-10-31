@@ -5,6 +5,7 @@
 :root {
     --black-color: #171100;
     --yellow-color: #ffb900;
+    --second-font:'Sen';
 }
 
 html {
@@ -19,7 +20,7 @@ body {
 /* Common */
 .heading {
     color: #171100;
-    font-family: Sen;
+    font-family: var(--second-font);
     font-weight: 700;
     letter-spacing: -1.16px;
 }
@@ -96,7 +97,7 @@ a {
 }
 
 .header .logo {
-    font-family: "Sen", sans-serif;
+    font-family: "var(--second-font)", sans-serif;
     color: #171100;
     font-size: 2.4rem;
     font-weight: 700;
@@ -285,7 +286,7 @@ a {
 .hero .stats strong {
     padding: 0 8px 0 28px;
     color: #171100;
-    font-family: Sen;
+    font-family: var(--second-font);
     font-size: 4.4rem;
     font-weight: 700;
     line-height: 1.22; /* 122.727% */
@@ -455,7 +456,7 @@ a {
 .feedback-item .info .title {
     margin-top: 18px;
     color: #f7f7f7;
-    font-family: Sen;
+    font-family: var(--second-font);
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 1.41; /* 141.667% */
@@ -484,7 +485,7 @@ a {
 }
 
 .feedback-item .dot.active {
-    background: #ffb900;
+    background: var(--yellow-color);
 }
 
 .feedback-item .content {
@@ -544,7 +545,7 @@ a {
 
 .features .content .features-btn {
     margin-top: 32px;
-    background: #ffb900;
+    background: var(--yellow-color);
     min-width: 137px;
 }
 
@@ -695,7 +696,6 @@ a {
     display: flex;
     padding-bottom: 38px;
     border-bottom: 1px solid #59554b;
-
 }
 
 .footer .row .column {
@@ -708,14 +708,14 @@ a {
 
 .footer .logo {
     color: #fff;
-    font-family: Sen;
+    font-family: var(--second-font);
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 1.41; /* 141.667% */
 }
 
 .footer .logo span {
-    color: #ffb900;
+    color: var(--yellow-color);
 }
 
 .footer .desc {
